@@ -61,6 +61,7 @@ public class Payoutv1TransactionStepDef extends BaseStepDef {
     }
     @When("Verify Order Id already Exists")
     public void verifyOrderIdAlreadyExists() {
+        payoutv1.getToken();
         payoutv1.verifyOrderIdAlreadyExists();
     }
 }
